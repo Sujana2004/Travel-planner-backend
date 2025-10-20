@@ -26,7 +26,7 @@ public class TripController {
         this.routeService = routeService;
     }
 
-    @PostMapping("/plan")
+    @PostMapping("/planTrip")
     public TripResponse planTrip(@RequestBody TripRequest request) {
         TripResponse response = new TripResponse();
 
