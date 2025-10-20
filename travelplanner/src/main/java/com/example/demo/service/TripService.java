@@ -40,8 +40,8 @@ public class TripService {
 	                + Math.pow(destCoords[1] - sourceCoords[1], 2)) * 111;
 
 	        // Dynamic weather
-	        String sourceWeather = weatherService.getCurrentWeather(sourceCoords[0], sourceCoords[1]);
-	        String destWeather = weatherService.getCurrentWeather(destCoords[0], destCoords[1]);
+	        String sourceWeather = weatherService.getWeather(sourceCoords[0], sourceCoords[1]);
+	        String destWeather = weatherService.getWeather(destCoords[0], destCoords[1]);
 
 	        // Recommendation
 	        String[] vehicles = {"Car", "Bus", "Train", "Flight"};
