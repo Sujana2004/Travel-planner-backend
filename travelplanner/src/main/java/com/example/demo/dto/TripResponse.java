@@ -10,6 +10,26 @@ public class TripResponse {
     private double destLon;
     private String sourceWeather;
     private String destinationWeather;
+
+	private String weatherSummary;
+    private List<double[]> routePoints;
+    
+    
+    
+	public String getWeatherSummary() {
+		return weatherSummary;
+	}
+	public void setWeatherSummary(String weatherSummary) {
+		this.weatherSummary = weatherSummary;
+	}
+	public List<double[]> getRoutePoints() {
+		return routePoints;
+	}
+	public void setRoutePoints(List<double[]> routePoints) {
+		this.routePoints = routePoints;
+	}
+
+	
 	public String getRecommendation() {
 		return recommendation;
 	}
