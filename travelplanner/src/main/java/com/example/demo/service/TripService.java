@@ -50,7 +50,7 @@ public class TripService {
 	        double confidence = 0.75 + random.nextDouble() * 0.15;
 
 	        // Dynamic route
-	        List<double[]> routePoints = routeService.getRoute(sourceCoords, destCoords);
+	        List<double[]> routePoints = routeService.getRoute(sourceCoords[0], sourceCoords[1], destCoords[0], destCoords[1]);
 
 	        response.put("recommendation", recommendedVehicle);
 	        response.put("confidence", confidence);
